@@ -1,0 +1,40 @@
+#container{
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(5, 100px);
+    grid-gap: 10px;
+    grid-template-areas: 
+    "Header Header Header Header"
+    "SmallBox1 SmallBox2 SmallBox3 Sidebar"
+    "SmallBox1 SmallBox2 SmallBox3 Sidebar"
+    "MainContent MainContent MainContent Sidebar"
+    "Footer Footer Footer Footer";
+}
+.content{
+    color: white;
+    background-color: blue;
+    /* border: 1px solid white; */
+    padding: 10px;
+}
+.content1{
+    grid-area: Header;
+    
+}
+.content7{
+    grid-area: Footer;
+}
+.content6{
+    grid-area: MainContent;
+}
+.content5{
+    grid-area: Sidebar;
+}
+.content2{
+    grid-area: 2/1/span 2/span 1;
+}
+.content3{
+    grid-row: 2/4;
+}
+.content4{
+    grid-row: 2/4;
+}
